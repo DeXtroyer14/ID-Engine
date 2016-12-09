@@ -1,0 +1,22 @@
+{
+  "name": "id_engine",
+  "version": "1.0.0",
+  "description": "id_engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/dextroyer/id_engine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/dextroyer/id_engine/issues"
+  },
+  "homepage": "https://gitlab.com/dextroyer/id_engine#README",
+  "devDependencies": {
+    "electron": "^1.4.11"
+  }
+}
