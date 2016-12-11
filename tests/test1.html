@@ -1,0 +1,13 @@
+<img onclick="javascript:exportToForm('http://www.motorcyclestorehouse.nl/product/','/')" src="China-Flag-256.png" />
+<script>
+    function exportToForm(a, b) {
+        var x = (a + id + b)
+        const shell = require('electron').shell
+
+        const exLinksBtn = document.getElementById('open-ex-links')
+
+        exLinksBtn.addEventListener('click', function(event) {
+            shell.openExternal(x)
+        })
+    }
+</script>

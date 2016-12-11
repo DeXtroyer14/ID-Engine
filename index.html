@@ -9,12 +9,20 @@
 </head>
 
 <body>
-    <h1>Hello World!</h1>
-    <select>
-      <option><img src="./1.png"></option>
-      <option style="background-image:url(2.png);">2</option>
-      <option style="background-image:url(3.png);">3</option>
-    </select>
+    <img onclick="javascript:exportToForm('http://www.motorcyclestorehouse.nl/product/','/')" src="China-Flag-256.png" />
+    <script>
+        function exportToForm(a, b) {
+            var x = (a);
+            const shell = require('electron').shell
+
+            const exLinksBtn = document.getElementById('open-ex-links')
+
+            exLinksBtn.addEventListener('click', function(event) {
+                shell.openExternal('http://www.motorcyclestorehouse.nl/product/')
+            })
+        };
+    </script>
+
 </body>
 
 </html>
