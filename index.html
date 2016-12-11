@@ -37,8 +37,9 @@
             var x = a + id + b;
 
             function openInNewTab(x) {
-                var win = window.open(x, '_blank');
-                win.focus();
+                var shell = require('electron').shell;
+                event.preventDefault();
+                shell.openExternal(x);
             };
             openInNewTab(x);
         };
