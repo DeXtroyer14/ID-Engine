@@ -1,13 +1,14 @@
-<img onclick="javascript:exportToForm('http://www.motorcyclestorehouse.nl/product/','/')" src="China-Flag-256.png" />
+<img onclick="javascript:exportToForm('http://www.motorcyclestorehouse.nl/product/','')" src="../1.png" />
 <script>
+    var id = "939633";
+
     function exportToForm(a, b) {
-        var x = (a + id + b)
-        const shell = require('electron').shell
+        var x = a + id + b;
 
-        const exLinksBtn = document.getElementById('open-ex-links')
-
-        exLinksBtn.addEventListener('click', function(event) {
-            shell.openExternal(x)
-        })
-    }
+        function openInNewTab(x) {
+            var win = window.open(x, '_blank');
+            win.focus();
+        };
+        openInNewTab(x);
+    };
 </script>
