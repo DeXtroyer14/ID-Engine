@@ -33,11 +33,12 @@
     <div class="center">
         <img onclick="javascript:exportToForm('http://www.motorcyclestorehouse.nl/product/', id, '')" src="./img/Harley-Davidson.svg" height="42" width="42" />
         <img onclick="javascript:exportToForm('http://accessories.harley-davidson.eu/product/', id, '')" src="./img/Motorcycle-Storehouse.jpg" height="42" width="42" />
+        <img onclick="javascript:exportToForm('https://shop.customchrome.de/es/', id, '.html')" src="./img/Custom-Chrome.svg" height="42" width="42" />
     </div>
     <script>
-        function exportToForm(a, b) {
+        function exportToForm(a, b, c) {
             var id = document.getElementById('input').value;
-            var x = a + id + b;
+            var x = a + id + c;
 
             function openInNewTab(x) {
                 var shell = require('electron').shell;
