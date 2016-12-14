@@ -4,8 +4,8 @@ img {
 }
 
 .images64 {
-    display: inline-block;
     text-align: center;
-    width: 100px;
+    width: auto;
     height: 100px;
+    float: left;
 }
