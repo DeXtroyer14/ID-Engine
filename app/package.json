@@ -2,10 +2,12 @@
     "name": "id_engine",
     "version": "1.0.0",
     "description": "id_engine",
-    "main": "index.js",
+    "main": "main.js",
     "scripts": {
         "start": "electron main.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "pack": "build --dir",
+        "dist": "build"
     },
     "repository": {
         "type": "git",
@@ -13,6 +15,11 @@
     },
     "author": "",
     "license": "ISC",
+    "build": {
+        "win": {
+            "iconUrl": "../built/icon.ico"
+        }
+    },
     "bugs": {
         "url": "https://gitlab.com/dextroyer/id_engine/issues"
     },

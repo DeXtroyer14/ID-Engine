@@ -1,1 +1,1 @@
-electron main.js
+electron .\app\main.js
